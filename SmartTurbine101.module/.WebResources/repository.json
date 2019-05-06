@@ -1,15 +1,7 @@
 {
     "records": [{
         "name": "Cloud",
-        "items": [{
-            "localTimestamp": 1551769731000,
-            "localURI": "/SmartTurbine101.module/Service Descriptors/SmartTurbine_1.0.1.json",
-            "disabled": false,
-            "remoteTimestamp": 1551746180000,
-            "localHash": "7a18d59191335883d753a931e6626cbdda174299",
-            "remoteId": "275",
-            "remoteHash": "7a18d59191335883d753a931e6626cbdda174299"
-        }],
+        "items": [],
         "url": "https://integration.cloud.tibco.com:443"
     }],
     "resources": [
@@ -107,6 +99,18 @@
         },
         {
             "location": "Service Descriptors/smartturbine101.module.Inventory_Q-inventory_q.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/smartturbine101.module.Inventory-Resource.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/smartturbine101.module.Inventory_test-Resource1.json",
+            "type": "generated"
+        },
+        {
+            "location": "Service Descriptors/smartturbine101.module.test-getInventory.json",
             "type": "generated"
         }
     ]

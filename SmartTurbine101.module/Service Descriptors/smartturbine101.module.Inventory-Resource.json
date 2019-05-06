@@ -9,20 +9,32 @@
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {
-    "/inventory_q" : {
+    "/v1/Inventory " : {
       "get" : {
         "summary" : "",
         "description" : "",
-        "operationId" : "get-inventory_q",
+        "operationId" : "get-v1-Inventory",
         "consumes" : [ "application/json" ],
         "produces" : [ "application/json" ],
-        "parameters" : [ {
-          "name" : "version",
-          "in" : "query",
-          "description" : "",
-          "type" : "string",
-          "required" : false
-        } ],
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "a InventoryAll_Response to be returned",
+            "schema" : {
+              "$ref" : "#/definitions/InventoryAll_Response"
+            }
+          }
+        }
+      }
+    },
+    "/v2/Inventory  " : {
+      "get" : {
+        "summary" : "",
+        "description" : "",
+        "operationId" : "get-v2-Inventory",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
         "responses" : {
           "200" : {
             "description" : "a InventoryAll_Response to be returned",

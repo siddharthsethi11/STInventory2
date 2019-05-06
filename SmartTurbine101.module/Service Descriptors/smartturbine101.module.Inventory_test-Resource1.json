@@ -9,20 +9,14 @@
   "basePath" : "/",
   "schemes" : [ "http" ],
   "paths" : {
-    "/inventory_q" : {
+    "/v3/Inventory " : {
       "get" : {
         "summary" : "",
         "description" : "",
-        "operationId" : "get-inventory_q",
+        "operationId" : "get-v3-Inventory",
         "consumes" : [ "application/json" ],
         "produces" : [ "application/json" ],
-        "parameters" : [ {
-          "name" : "version",
-          "in" : "query",
-          "description" : "",
-          "type" : "string",
-          "required" : false
-        } ],
+        "parameters" : [ ],
         "responses" : {
           "200" : {
             "description" : "a InventoryAll_Response to be returned",

@@ -15,34 +15,13 @@
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_l9T0kUjkEemQdajVkIZP-g" bindingName="RestService"/>
   </sca:service>
-  <sca:service xmi:id="_pJptYkjnEemQdajVkIZP-g" name="v1-inventory" promote="ComponentInventory_P/v1-inventory">
-    <sca:interface.wsdl xmi:id="_pJptZkjnEemQdajVkIZP-g" interface="http://xmlns.example.com/20190317190432PLT#wsdl.interface(v1-inventory)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory_P.bwp"/>
-    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_pJqUcEjnEemQdajVkIZP-g" name="RestService1" path="/v1/inventory" docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="inventory" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.Inventory_P-inventory.json">
-      <operation xmi:id="_pJq7gEjnEemQdajVkIZP-g" operationName="get" nickname="get-v1-inventory" httpMethod="GET" responseStyle="element">
-        <clientFormat>json</clientFormat>
-        <clientRequestFormat>json</clientRequestFormat>
-      </operation>
-      <parameters xmi:id="_pJrikEjnEemQdajVkIZP-g"/>
-      <advancedConfig xmi:id="_pJqUcUjnEemQdajVkIZP-g" blockingQueueSize="2147483647"/>
-    </scaext:binding>
-    <scact:bindingAdjunct xmi:id="_pJq7gUjnEemQdajVkIZP-g" bindingName="RestService1"/>
-  </sca:service>
-  <sca:service xmi:id="_uvxoYkjnEemQdajVkIZP-g" name="v2-inventory" promote="ComponentInventory_P/v2-inventory">
-    <sca:interface.wsdl xmi:id="_uvyPckjnEemQdajVkIZP-g" interface="http://xmlns.example.com/20190317190432PLT#wsdl.interface(v2-inventory)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory_P.bwp"/>
-    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_uvy2gEjnEemQdajVkIZP-g" name="RestService2" path="/v2/inventory" docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="inventory" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.Inventory_P-inventory.json">
-      <operation xmi:id="_uvy2gkjnEemQdajVkIZP-g" operationName="get" nickname="get-v2-inventory" httpMethod="GET" responseStyle="element">
-        <clientFormat>json</clientFormat>
-        <clientRequestFormat>json</clientRequestFormat>
-      </operation>
-      <parameters xmi:id="_uvzdkEjnEemQdajVkIZP-g"/>
-      <advancedConfig xmi:id="_uvy2gUjnEemQdajVkIZP-g" blockingQueueSize="2147483647"/>
-    </scaext:binding>
-    <scact:bindingAdjunct xmi:id="_uvy2g0jnEemQdajVkIZP-g" bindingName="RestService2"/>
-  </sca:service>
   <sca:service xmi:id="_wV3xkkjpEemQdajVkIZP-g" name="inventory_q" promote="ComponentInventory_Q/inventory_q">
     <sca:interface.wsdl xmi:id="_wV3xlkjpEemQdajVkIZP-g" interface="http://xmlns.example.com/20190317191937#wsdl.interface(inventory_q)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory_Q.bwp"/>
     <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_wV4YoEjpEemQdajVkIZP-g" name="RestService3" path="/inventory_q" docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="inventory_q" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.Inventory_Q-inventory_q.json">
       <operation xmi:id="_wV4_sEjpEemQdajVkIZP-g" operationName="get" nickname="get-inventory_q" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_o--HcGpREemw3bvxnqTb3g">
+          <parameterMapping xmi:id="_o--HcWpREemw3bvxnqTb3g" parameterName="version" parameterType="Query" dataType="string"/>
+        </parameters>
         <clientFormat>json</clientFormat>
         <clientRequestFormat>json</clientRequestFormat>
       </operation>
@@ -51,6 +30,54 @@
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_wV4_sUjpEemQdajVkIZP-g" bindingName="RestService3"/>
   </sca:service>
+  <sca:service xmi:id="_jpy3oG10Eem5XciJskwLUA" name="v1-Inventory" promote="ComponentInventory/v1-Inventory">
+    <sca:interface.wsdl xmi:id="_jp6zcG10Eem5XciJskwLUA" interface="http://xmlns.example.com/20190503072041PLT#wsdl.interface(v1-Inventory)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_jp92wG10Eem5XciJskwLUA" name="RestService1" path="/v1/Inventory " docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="Resource" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.Inventory-Resource.json">
+      <operation xmi:id="_jp-d0G10Eem5XciJskwLUA" operationName="get" nickname="get-v1-Inventory" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_jqDWUG10Eem5XciJskwLUA"/>
+      <advancedConfig xmi:id="_jp92wW10Eem5XciJskwLUA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_jp-d0W10Eem5XciJskwLUA" bindingName="RestService1"/>
+  </sca:service>
+  <sca:service xmi:id="_bPE4oG11Eem5XciJskwLUA" name="v2-Inventory" promote="ComponentInventory/v2-Inventory">
+    <sca:interface.wsdl xmi:id="_bPGGwG11Eem5XciJskwLUA" interface="http://xmlns.example.com/20190503072041PLT#wsdl.interface(v2-Inventory)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_bPGt0G11Eem5XciJskwLUA" name="RestService2" path="/v2/Inventory  " docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="Resource" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.Inventory-Resource.json">
+      <operation xmi:id="_bPHU4G11Eem5XciJskwLUA" operationName="get" nickname="get-v2-Inventory" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_bPH78G11Eem5XciJskwLUA"/>
+      <advancedConfig xmi:id="_bPGt0W11Eem5XciJskwLUA" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_bPHU4W11Eem5XciJskwLUA" bindingName="RestService2"/>
+  </sca:service>
+  <sca:service xmi:id="_NhdpYm_3Eem80aELv-1riw" name="getinventory" promote="Componenttest/getinventory">
+    <sca:interface.wsdl xmi:id="_NheQcm_3Eem80aELv-1riw" interface="http://xmlns.example.com/20190506120426PLT#wsdl.interface(getinventory)" scaext:wsdlLocation="../Processes/smartturbine101/module/test.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_NheQc2_3Eem80aELv-1riw" name="RestService4" path="/getinventory" docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="getInventory" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.test-getInventory.json">
+      <operation xmi:id="_Nhe3gG_3Eem80aELv-1riw" operationName="get" nickname="get-getinventory" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_NhfekG_3Eem80aELv-1riw"/>
+      <advancedConfig xmi:id="_NheQdG_3Eem80aELv-1riw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_Nhe3gW_3Eem80aELv-1riw" bindingName="RestService4"/>
+  </sca:service>
+  <sca:service xmi:id="_sFapAm_5Eem80aELv-1riw" name="getinventory_v2" promote="Componenttest/getinventory_v2">
+    <sca:interface.wsdl xmi:id="_sFbQEG_5Eem80aELv-1riw" interface="http://xmlns.example.com/20190506120426PLT#wsdl.interface(getinventory_v2)" scaext:wsdlLocation="../Processes/smartturbine101/module/test.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_sFbQEW_5Eem80aELv-1riw" name="RestService5" path="/getinventory_v2" docBasePath="http://localhost:7777/SmartTurbine101.module" docResourcePath="getInventory" basePath="/" connector="smartturbine101.module.Process" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/smartturbine101.module.test-getInventory.json">
+      <operation xmi:id="_sFb3IG_5Eem80aELv-1riw" operationName="get" nickname="get-getinventory_v2" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <parameters xmi:id="_sFdFQG_5Eem80aELv-1riw"/>
+      <advancedConfig xmi:id="_sFbQEm_5Eem80aELv-1riw" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_sFb3IW_5Eem80aELv-1riw" bindingName="RestService5"/>
+  </sca:service>
   <sca:property xmi:id="_Ae3XwD8NEembBq469JEbBw" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_AfEMED8NEembBq469JEbBw" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_AfN9ED8NEembBq469JEbBw" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
@@ -58,25 +85,35 @@
   <sca:property xmi:id="_Afg4AD8NEembBq469JEbBw" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
   <sca:property xmi:id="_AfrQED8NEembBq469JEbBw" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
   <sca:property xmi:id="_Af1oID8NEembBq469JEbBw" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_YrJ94GpVEemw3bvxnqTb3g" name="DB_URL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_gijcEEjkEemQdajVkIZP-g" name="ComponentInvertory_Header" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_gijcEUjkEemQdajVkIZP-g" processName="smartturbine101.module.Invertory_Header"/>
     <sca:service xmi:id="_l9R_YEjkEemQdajVkIZP-g" name="invetory_h">
       <sca:interface.wsdl xmi:id="_l9SmcEjkEemQdajVkIZP-g" interface="http://xmlns.example.com/20190317184308PLT#wsdl.interface(invetory_h)"/>
     </sca:service>
   </sca:component>
-  <sca:component xmi:id="_f8mvAEjnEemQdajVkIZP-g" name="ComponentInventory_P" compositeext:version="1.0.0.qualifier">
-    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_f8mvAUjnEemQdajVkIZP-g" processName="smartturbine101.module.Inventory_P"/>
-    <sca:service xmi:id="_pJptYEjnEemQdajVkIZP-g" name="v1-inventory">
-      <sca:interface.wsdl xmi:id="_pJptYUjnEemQdajVkIZP-g" interface="http://xmlns.example.com/20190317190432PLT#wsdl.interface(v1-inventory)"/>
-    </sca:service>
-    <sca:service xmi:id="_uvxoYEjnEemQdajVkIZP-g" name="v2-inventory">
-      <sca:interface.wsdl xmi:id="_uvxoYUjnEemQdajVkIZP-g" interface="http://xmlns.example.com/20190317190432PLT#wsdl.interface(v2-inventory)"/>
-    </sca:service>
-  </sca:component>
   <sca:component xmi:id="_mzNvkEjpEemQdajVkIZP-g" name="ComponentInventory_Q" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_mzNvkUjpEemQdajVkIZP-g" processName="smartturbine101.module.Inventory_Q"/>
     <sca:service xmi:id="_wV3xkEjpEemQdajVkIZP-g" name="inventory_q">
       <sca:interface.wsdl xmi:id="_wV3xkUjpEemQdajVkIZP-g" interface="http://xmlns.example.com/20190317191937#wsdl.interface(inventory_q)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory_Q.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_9UFhAG1zEem5XciJskwLUA" name="ComponentInventory" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_9UFhAW1zEem5XciJskwLUA" processName="smartturbine101.module.Inventory"/>
+    <sca:service xmi:id="_jpvNQG10Eem5XciJskwLUA" name="v1-Inventory">
+      <sca:interface.wsdl xmi:id="_jpwbYG10Eem5XciJskwLUA" interface="http://xmlns.example.com/20190503072041PLT#wsdl.interface(v1-Inventory)"/>
+    </sca:service>
+    <sca:service xmi:id="_bPERkG11Eem5XciJskwLUA" name="v2-Inventory">
+      <sca:interface.wsdl xmi:id="_bPERkW11Eem5XciJskwLUA" interface="http://xmlns.example.com/20190503072041PLT#wsdl.interface(v2-Inventory)" scaext:wsdlLocation="../Processes/smartturbine101/module/Inventory.bwp"/>
+    </sca:service>
+  </sca:component>
+  <sca:component xmi:id="_GCyRUG_3Eem80aELv-1riw" name="Componenttest" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_GCyRUW_3Eem80aELv-1riw" processName="smartturbine101.module.test"/>
+    <sca:service xmi:id="_NhdpYG_3Eem80aELv-1riw" name="getinventory">
+      <sca:interface.wsdl xmi:id="_NhdpYW_3Eem80aELv-1riw" interface="http://xmlns.example.com/20190506120426PLT#wsdl.interface(getinventory)"/>
+    </sca:service>
+    <sca:service xmi:id="_sFapAG_5Eem80aELv-1riw" name="getinventory_v2">
+      <sca:interface.wsdl xmi:id="_sFapAW_5Eem80aELv-1riw" interface="http://xmlns.example.com/20190506120426PLT#wsdl.interface(getinventory_v2)" scaext:wsdlLocation="../Processes/smartturbine101/module/test.bwp"/>
     </sca:service>
   </sca:component>
 </sca:composite>
